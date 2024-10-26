@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva Aventura X</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Reserva d'activitats - Aventura X</h1>
+        <form id="reserva-form">
+            <!-- Dades de contacte -->
+            <label for="nom">Nom:</label>
+            <input type="text" id="nom" name="nom" required autocomplete="given-name">
+
+            <label for="cognoms">Cognoms:</label>
+            <input type="text" id="cognoms" name="cognoms" required autocomplete="family-name">
+
+            <label for="email">Correu electrònic:</label>
+            <input type="email" id="email" name="email" required autocomplete="email">
+
+            <label for="dni">DNI/Passaport:</label>
+            <input type="text" id="dni" name="dni" required autocomplete="off">
+
+            <!-- Direcció -->
+            <label for="adreca">Adreça:</label>
+            <input type="text" id="adreca" name="adreca" required autocomplete="street-address">
+
+            <!-- Data de l'activitat -->
+            <label for="data">Data de l'activitat:</label>
+            <input type="date" id="data" name="data" required 
+                min="2024-10-08"  
+                max="2025-01-07">
+
+            <!-- Activitats -->
+            <label for="activitat">Selecciona l'activitat:</label>
+            <select id="activitat" name="activitat">
+                <option value="escalada">Escalada</option>
+                <option value="tirolina">Tirolina</option>
+                <option value="senderisme">Senderisme</option>
+                <option value="caiac">Caiac</option>
+                <option value="parapent">Parapent</option>
+            </select>
+            <p>Necessites equipament extra?</p>
+            <div class="equipament-radio">
+                <label><input type="radio" name="equipament" value="si"> Sí</label>
+                <label><input type="radio" name="equipament" value="no" checked> No</label>
+            </div>
+            <label><input type="checkbox" name="info-correu"> Vull rebre informació per correu electrònic</label>
+            <label><input type="checkbox" name="politiques" required> Accepto les polítiques de seguretat i privacitat</label>
+            <button type="submit">Enviar reserva</button>
+            <button type="button" onclick="descarregarPDF()">Descarregar en PDF</button>
+        </form>
+    </div>
+
+    <script>
+        // Funció per descarregar la reserva en PDF (només un exemple bàsic)
+        function descarregarPDF() {
+            alert('Funcionalitat per descarregar PDF encara no implementada.');
+        }
+    </script>
+</body>
+</html>

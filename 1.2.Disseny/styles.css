@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+
+:root {
+    --roseda-green: #6B8F71;
+    --charcoal: #2A3D45;
+    --eggshell: #F4F1DE;
+    --rose-quartz: #A799B7;
+    --vanilla: #FFEFBD;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--eggshell);
+    color: var(--charcoal);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--roseda-green);
+    padding: 20px 20px;
+}
+
+.nav-left {
+    display: flex;
+    gap: 100px;
+    list-style: none;
+    letter-spacing: 1.5px;
+}
+
+.nav-left li {
+    display: inline;
+}
+
+.nav-right {
+    list-style: none;
+}
+
+.nav-left li:first-child {
+    margin-left: 30px; 
+}
+
+.nav a {
+    color: var(--eggshell);
+    text-decoration: none;
+    font-size: 14pt;
+    padding: 10px;
+}
+
+.nav a:hover {
+    background-color: #555;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+.conoce h1{
+    color: var(--charcoal);
+}
+.login-btn {
+    background-color: var(--eggshell);
+    color: var(--roseda-green) !important;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 14pt;
+    text-align: center;
+    
+}
+
+.login-btn:hover {
+    background-color: var(--vanilla) !important;
+    transition: background-color 0.3s !important;
+    border-radius: 15px !important; 
+}
+
+.responsive-image-container {
+    width: 100%;
+    height: 50vh; 
+    overflow: hidden; 
+    position: relative;
+}
+
+.image {
+    width: 100%;
+    margin: auto;
+    height: 40vh;
+    
+}
+
+.image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.textimg{
+    font-family: 'Belleza', sans-serif;
+    letter-spacing: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -250%);
+    font-size: 16pt;
+    text-align: center;
+}
+
+.equipo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.descripcion{
+    background-color: var(--rose-quartz);
+    
+}
+.desc{
+    color: var(--eggshell);
+   text-align: center;
+   font-family: "Belleza",sans-serif;
+   font-size: 16pt; 
+   margin-top: 20px;
+   margin-left: 150px;
+   margin-right: 150px;
+   margin-bottom: 20px;
+   letter-spacing: 2px;
+}
+.conoce{
+    font-family: "belleza", sans-serif;
+    font-size: 16pt;
+    color: var(--charcoal);
+    letter-spacing: 5px;
+}
+.teamate{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 30px 0;
+    width: 800px;
+}
+
+.imgteam{
+    flex: 1; 
+    max-width: 200px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgteam img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%; 
+    border: 3px solid #333; 
+    object-fit: cover; 
+}
+.mate1{
+    flex: 2;
+    align-items: left;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+h2 {
+    margin: 0;
+    font-size: 14pt;
+    text-align: left;
+    color: var(--rose-quartz);
+}
+
+p {
+    margin-top: 5px;
+    font-size: 12pt;
+    color: var(--charcoal);
+    letter-spacing: 1.5px;
+    text-align: justify;
+}
+.mate1:first-of-type > p{
+    text-align: right;
+}
+.mate1:first-of-type > h2{
+    text-align: right;
+}
+.mate1:last-of-type > h2{
+    text-align: left;
+}
+.mate1:last-of-type > p{
+    text-align: left;
+}
+
+.mate1 > p{
+    font-size: 12pt;
+}
+.mate1 > h2{
+    font-size: 16pt;
+}
+.login-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: var(--roseda-green); 
+    padding: 20px; 
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    width: 30%; 
+    text-align: left;
+    box-sizing: border-box; 
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: var(--eggshell);
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px; 
+    color: var(--eggshell);
+}
+
+label {
+    display: block; 
+    margin-bottom: 5px; 
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%; 
+    padding: 10px; 
+    border: 1px solid --charcoal; 
+    border-radius: 5px; 
+    box-sizing: border-box; 
+    background-color: var(--eggshell);
+}
+
+input[type="checkbox"] {
+    margin-right: 5px; 
+    color: var(--eggshell);
+}
+
+.btn-access, .btn-google {
+    width: 100%; 
+    padding: 10px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 16px; 
+}
+
+.btn-access {
+    background-color: var(--vanilla); 
+    color: var(--charcoal); 
+    margin-bottom: 10px; 
+}
+
+.btn-access:hover {
+    background-color: var(--charcoal);
+    color: var(--vanilla);
+
+}
+
+.btn-google {
+    background-color: var(--rose-quartz); 
+    color: var(--vanilla); 
+}
+
+.btn-google:hover {
+    background-color: var(--charcoal); 
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+
+    margin: 0 auto;
+}
+
+footer p{
+    color: var(--vanilla);
+    margin-bottom: 10px;
+}
+
+.social-icons img {
+    width: 40px; 
+    height: 40px; 
+    margin: 5px;
+    transition: transform 0.3s, filter 0.3s
+}
+
+.social-icons img:hover {
+    transform: scale(1.2); 
+    filter: brightness(1.5); 
+}
+.social-icon svg path {
+    fill: rosybrown; 
+    transition: fill 0.3s ease;
+}
+
+.social-icon svg:hover path {
+    fill: rosybrown; 
+}

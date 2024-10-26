@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal Dropdown Menu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        ul {
+            list-style: none;
+        }
+        nav {
+            background-color: #333;
+        }
+        nav ul {
+            display: flex;
+        }
+        nav ul li {
+            position: relative;
+        }
+        nav ul li a {
+            display: block;
+            padding: 15px 20px;
+            color: white;
+            text-decoration: none;
+        }
+        nav ul li:hover > a {
+            background-color: #444;
+        }
+        nav ul ul {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #333;
+            display: none;
+        }
+        nav ul li:hover > ul {
+            display: block;
+        }
+        nav ul ul li {
+            width: 200px;
+        }
+        nav ul ul ul {
+            left: 100%;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="#">Home</a>
+            <ul>
+                <li><a href="#">Overview</a>
+                    <ul>
+                        <li><a href="#">Company Overview</a></li>
+                        <li><a href="#">Mission Statement</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">News</a>
+                    <ul>
+                        <li><a href="#">Press Releases</a></li>
+                        <li><a href="#">Events</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Blog</a>
+                    <ul>
+                        <li><a href="#">Latest Posts</a></li>
+                        <li><a href="#">Categories</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="#">Products</a>
+            <ul>
+                <li><a href="#">Electronics</a>
+                    <ul>
+                        <li><a href="#">Phones</a></li>
+                        <li><a href="#">Computers</a></li>
+                        <li><a href="#">Gadgets</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Apparel</a>
+                    <ul>
+                        <li><a href="#">Men’s</a></li>
+                        <li><a href="#">Women’s</a></li>
+                        <li><a href="#">Kids</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Accessories</a>
+                    <ul>
+                        <li><a href="#">Watches</a></li>
+                        <li><a href="#">Bags</a></li>
+                        <li><a href="#">Jewelry</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="#">Services</a>
+            <ul>
+                <li><a href="#">Consulting</a>
+                    <ul>
+                        <li><a href="#">Strategy</a></li>
+                        <li><a href="#">IT Services</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Support</a>
+                    <ul>
+                        <li><a href="#">Technical</a></li>
+                        <li><a href="#">Customer</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Customization</a>
+                    <ul>
+                        <li><a href="#">Product</a></li>
+                        <li><a href="#">Software</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="#">About Us</a>
+            <ul>
+                <li><a href="#">Company History</a>
+                    <ul>
+                        <li><a href="#">Founders</a></li>
+                        <li><a href="#">Timeline</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Team</a>
+                    <ul>
+                        <li><a href="#">Management</a></li>
+                        <li><a href="#">Staff</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Careers</a>
+                    <ul>
+                        <li><a href="#">Open Positions</a></li>
+                        <li><a href="#">Internships</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="#">Contact Us</a>
+            <ul>
+                <li><a href="#">Email</a>
+                    <ul>
+                        <li><a href="#">Support Email</a></li>
+                        <li><a href="#">Sales Email</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Phone</a>
+                    <ul>
+                        <li><a href="#">Toll-Free</a></li>
+                        <li><a href="#">Local</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Social Media</a>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+</body>
+</html>
