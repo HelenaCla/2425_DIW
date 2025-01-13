@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive amb Tailwind </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-r from-indigo-200 via-purple-200 to-pink-200 text-gray-800">
+
+    <!-- Header -->
+    <header class="flex items-center justify-between h-20 px-6 bg-gradient-to-r from-blue-500 to-indigo-500 text-white shadow-lg">
+        <div class="w-36">
+            <img src="logo.png" alt="Logo" class="w-full">
+        </div>
+        <nav class="flex space-x-4">
+            <a href="#" class="hover:underline text-white">Link 1</a>
+            <a href="#" class="hover:underline text-white">Link 2</a>
+            <a href="#" class="hover:underline text-white">Link 3</a>
+        </nav>
+    </header>
+
+    <!-- Profile Section -->
+    <section class="flex flex-wrap items-start w-full max-w-4xl p-6 mx-auto bg-white shadow-md rounded-lg mt-6">
+        <div class="flex-shrink-0 w-36 h-36 mr-5">
+            <img src="profile.png" alt="Profile Picture" class="w-full h-full object-cover rounded-full border-4 border-purple-400">
+        </div>
+        <div class="flex-1">
+            <p class="text-gray-700">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at felis ut augue vestibulum luctus. Nulla facilisi. Integer feugiat eros vel est bibendum, nec blandit libero scelerisque.
+            </p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-6xl p-6 mx-auto mt-6 bg-gradient-to-r from-pink-200 via-purple-300 to-indigo-200 rounded-lg shadow-lg">
+        <img src="imagen1.jpg" alt="imagen Image" class="w-full h-auto object-cover rounded-lg shadow-md">
+        <img src="imagen2.jpg" alt="imagen Image" class="w-full h-auto object-cover rounded-lg shadow-md">
+        <img src="imagen3.jpg" alt="imagen Image" class="w-full h-auto object-cover rounded-lg shadow-md">
+        <img src="imagen4.jpg" alt="imagen Image" class="w-full h-auto object-cover rounded-lg shadow-md">
+        <img src="imagen5.jpg" alt="imagen Image" class="w-full h-auto object-cover rounded-lg shadow-md">
+        <img src="imagen6.jpg" alt="imagen Image" class="w-full h-auto object-cover rounded-lg shadow-md">
+    </section>
+
+    <!-- Footer -->
+    <footer class="flex items-center justify-between h-16 px-6 bg-gradient-to-r from-indigo-500 to-blue-500 text-white shadow-md mt-6">
+        <div class="hover:underline">Contact</div>
+        <div class="hover:underline">About</div>
+        <div class="hover:underline">Social Media</div>
+    </footer>
+
+</body>
+</html>
