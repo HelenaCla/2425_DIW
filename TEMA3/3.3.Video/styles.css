@@ -1,0 +1,105 @@
+/* 1. GLOBAL STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    /* For a smooth look, choose a neutral background color */
+    background: #f0f0f0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* 2. BANNER STYLES */
+  .banner {
+    width: 100%;
+    padding: 2rem;
+    text-align: center;
+    background: linear-gradient(45deg, #00b4db, #0083b0);
+    color: #fff;
+  
+    /* This transition property will animate the transform smoothly */
+    transition: transform 1s ease;
+  }
+  
+  /* On hover, we'll slightly scale up the banner */
+  .banner:hover {
+    transform: scale(1.03);
+  }
+  
+  /* 3. CONTENT WRAPPER */
+  .content {
+    max-width: 1200px;
+    width: 90%;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* 4. BUTTON WITH HOVER EFFECT */
+  .animate-btn {
+    background-color: #0083b0;
+    color: #fff;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  
+    /* Transition to animate background-color and transform changes smoothly */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .animate-btn:hover {
+    background-color: #00b4db;
+    transform: scale(1.05);
+  }
+  
+  /* 5. ELEMENT WITH KEYFRAME ANIMATION */
+  .animated-element {
+    width: 100px;
+    height: 100px;
+    margin-top: 2rem;
+    background-color: #ff6f61;
+  
+    /* We apply our custom keyframe animation below */
+    animation: rotate-and-fade 3s linear infinite;
+  }
+  
+  /* KEYFRAMES DEFINITION */
+  @keyframes rotate-and-fade {
+    /* At 0%: No rotation, fully visible */
+    0% {
+      transform: rotate(0deg);
+      opacity: 1;
+    }
+    /* At 50%: 180 degrees rotation, partially faded */
+    50% {
+      transform: rotate(180deg);
+      opacity: 0.5;
+    }
+    /* At 100%: 360 degrees rotation, fully visible again */
+    100% {
+      transform: rotate(360deg);
+      opacity: 1;
+    }
+  }
+  
+  /* 6. RESPONSIVE TOUCH (Optional) 
+     Use media queries to adjust banner text or element size for smaller screens */
+  @media (max-width: 600px) {
+    .banner h1 {
+      font-size: 1.5rem;
+    }
+    .animated-element {
+      width: 80px;
+      height: 80px;
+    }
+  }
+  
